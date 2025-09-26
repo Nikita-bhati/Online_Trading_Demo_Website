@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingPro Demo | Online Trading Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="OnlineTrading.css">
+        
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TradingPro</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Trading Demo</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Advanced Online Trading Platform</h1>
+                <p>Experience the power of professional trading tools with our demo platform. Practice trading with virtual funds and real market data.</p>
+                <button class="btn btn-primary">Start Trading Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-candlestick"></i>
+                    </div>
+                    <h3>Advanced Charting</h3>
+                    <p>Access professional charting tools with multiple indicators and drawing tools for technical analysis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-time Data</h3>
+                    <p>Get real-time market data and streaming quotes to make informed trading decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Platform</h3>
+                    <p>Trade with confidence using our secure, encrypted platform that protects your data and transactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Trading</h3>
+                    <p>Trade on the go with our mobile app available for iOS and Android devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Demo Section -->
+    <section class="trading-demo" id="demo">
+        <div class="container">
+            <h2 class="section-title">Trading Demo</h2>
+            <div class="demo-container">
+                <div class="chart-container">
+                    <div class="chart-placeholder">
+                        Interactive Trading Chart (Simulated)
+                    </div>
+                </div>
+                <div class="trading-panel">
+                    <h3>Trade Stocks</h3>
+                    <div class="form-group">
+                        <label for="symbol">Symbol</label>
+                        <select id="symbol">
+                            <option>AAPL - Apple Inc.</option>
+                            <option>MSFT - Microsoft Corp.</option>
+                            <option>GOOGL - Alphabet Inc.</option>
+                            <option>AMZN - Amazon.com Inc.</option>
+                            <option>TSLA - Tesla Inc.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" value="10" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="order-type">Order Type</label>
+                        <select id="order-type">
+                            <option>Market Order</option>
+                            <option>Limit Order</option>
+                            <option>Stop Order</option>
+                        </select>
+                    </div>
+                    <div class="trade-buttons">
+                        <button class="btn btn-buy">Buy</button>
+                        <button class="btn btn-sell">Sell</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Demo Portfolio</h2>
+            <table class="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AAPL</td>
+                        <td>Apple Inc.</td>
+                        <td>10</td>
+                        <td>$175.43</td>
+                        <td>$1,754.30</td>
+                        <td class="positive">+2.3%</td>
+                    </tr>
+                    <tr>
+                        <td>MSFT</td>
+                        <td>Microsoft Corp.</td>
+                        <td>5</td>
+                        <td>$337.69</td>
+                        <td>$1,688.45</td>
+                        <td class="positive">+1.7%</td>
+                    </tr>
+                    <tr>
+                        <td>GOOGL</td>
+                        <td>Alphabet Inc.</td>
+                        <td>3</td>
+                        <td>$139.97</td>
+                        <td>$419.91</td>
+                        <td class="negative">-0.4%</td>
+                    </tr>
+                    <tr>
+                        <td>AMZN</td>
+                        <td>Amazon.com Inc.</td>
+                        <td>2</td>
+                        <td>$145.18</td>
+                        <td>$290.36</td>
+                        <td class="positive">+3.1%</td>
+                    </tr>
+                    <tr>
+                        <td>TSLA</td>
+                        <td>Tesla Inc.</td>
+                        <td>5</td>
+                        <td>$260.54</td>
+                        <td>$1,302.70</td>
+                        <td class="negative">-1.2%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TradingPro</h3>
+                    <p>A demo online trading platform developed to showcase modern web development skills and UI/UX design principles.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Trading Demo</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Learning Center</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Trading Strategies</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Greater Noida, India</li>
+                        <li><i class="fas fa-envelope"></i> info@tradingpro.demo</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 TradingPro Demo. Developed as a portfolio project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "OnlineTrading.js">
+      </script>
+</body>
+</html>
